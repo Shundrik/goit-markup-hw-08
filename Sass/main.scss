@@ -1,0 +1,65 @@
+// подключение нормолайз стилей
+@import "./base/_normalize";
+
+// переменные
+@import "./utils/_variables.scss";
+
+// базовые
+@import './base/base';
+
+// Хедер
+@import "./Components/_header.scss";
+
+// лого
+@import "./Components/_logo.scss";
+
+// навигация
+@import "./Components/_nav.scss";
+
+// авторизация
+@import "./Components/_authorization.scss";
+
+// герой
+@import "./Components/_hero.scss";
+
+// модальное окно героя
+@import "./Components/_modalData.scss";
+
+    // - форма с данными
+    @import './Components/data-group';
+
+    // - чекбокс
+    @import './Components/data-checkbox';
+
+// особенности
+
+@import "./Components/_peculiarities.scss";
+
+// чем мы занимаемся
+
+@import "./Components/_about.scss";
+
+// наши сотрудники
+
+@import "./Components/_employee.scss";
+
+// наши клиенты
+
+@import "./Components/_clients.scss";
+
+// футер
+
+@import "./Components/_footer.scss";
+
+// секция портфолио
+
+// портфолио__фильтр
+@import "./Components/portfolio-filter";
+
+// портфолио__проекты
+@import "./Components/portfolio-project";
+
+//  The end
+
+
+   

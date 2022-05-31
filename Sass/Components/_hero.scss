@@ -1,0 +1,69 @@
+   .hero {
+    text-align: center;
+  
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .hero__title {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+  
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    color: #ffffff;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    background-color: $secondary-bg-color;
+  }
+  
+  .hero_btn {
+    color:$button-text-color;
+    background-color:$button-bg-color;
+    text-align: center;
+  
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 32px;
+  
+    min-width: 200px;
+    min-height: 50px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+  
+    transition-property: background-color;
+    transition-duration:$transition-duration;
+    transition-timing-function: $timing-bezier;
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      cursor: pointer;
+    }
+
+  }
+  

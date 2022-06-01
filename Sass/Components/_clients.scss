@@ -1,19 +1,43 @@
 .clients__list {
   display: flex;
-  justify-content: center;
-
+// flex-basis: 50%;
+  
+  
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  // @media screen and (min-width:$mobile) {
+  //   
+  //   flex-basis: 50%;
+
+
+  // }
+  
+}
+ 
+.clients__item{
+display: flex;
+  @media screen and (min-width:$mobile) {
+    flex-wrap: wrap;
+   
+
+  }
+ 
+  @media screen and (min-width:$tablet) {
+    //  flex-basis: 33,3%;
+
+
+  }
 }
 
-.clients__item + .clients__item {
-  margin-left: 30px;
-}
+
+
 
 .clients__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   align-items: center;
@@ -33,12 +57,18 @@
   transition-duration: $transition-duration, $transition-duration;
   transition-timing-function: $timing-bezier, $timing-bezier;
   
+  
+
+
+  
   &:hover,
   &:focus{
     color: $accent-color;
     border: 1px solid $accent-color;
 
   }
+
+  
 }
 .clients__svg {
   width: 106px;

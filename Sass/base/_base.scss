@@ -1,23 +1,59 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.conteiner {
+  // width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
-  
-  body {
-    background-color: $primary-bg-color;
-    color: $primary-text-color;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
-  a {
-    text-decoration: none;
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
-  img {
-    display: block;
+}
+
+.section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  margin-left: 0;
+  margin-right: 0;
+
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .conteiner {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
+}

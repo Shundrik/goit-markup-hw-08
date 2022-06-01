@@ -3,22 +3,38 @@
 }
 
 .employee {
-  display: flex;
-
   text-align: center;
   list-style: none;
 
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+
+  // @media screen and (min-width:$mobile){
+  //   display: flex;
+  //   flex-wrap: wrap;
+    
+
+  
+  @media screen and (min-width:$tablet){
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  // @media screen and (min-width:$desktop){
+  //   display: flex;
+
+  // }
 }
 
-.employee__item + .employee__item {
-  margin-left: 30px;
-}
+// .employee__item + .employee__item {
+//    margin-left: 30px;
+// }
 
 .employee__item {
   background-color: #ffffff;
+ 
+  display: inline-block;
 
   margin-left: 0;
   margin-right: 0;

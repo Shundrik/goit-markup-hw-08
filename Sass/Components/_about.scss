@@ -1,6 +1,11 @@
 .section.about {
   padding: 0;
   padding-bottom: 94px;
+
+  
+  @media screen and (max-width:$desktop) {
+   display:none;
+  }
 }
 .about__list {
   display: flex;

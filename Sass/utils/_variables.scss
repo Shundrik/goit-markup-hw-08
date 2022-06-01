@@ -1,4 +1,4 @@
-
+// базовые 
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $titel-text-color: #212121;
@@ -10,7 +10,11 @@ $section-color: #212121;
 $secondary-bg-color: #2f303a;
 $primary-bg-color: #ffffff;
 
+// трансформация
 $timing-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 $transition-duration: 250ms;
   
-  
+//   точки перелома
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

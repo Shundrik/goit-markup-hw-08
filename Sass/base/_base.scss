@@ -28,14 +28,17 @@ img {
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+    // background-color: teal;
   }
 
   @media screen and (min-width: $tablet) {
     width: $tablet;
+    background-color: orange;
   }
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
+    background-color: red;
   }
 }
 

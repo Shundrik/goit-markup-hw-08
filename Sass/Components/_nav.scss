@@ -19,8 +19,17 @@
   line-height: 1.07;
 
 @media screen and (min-width: $mobile) {
-  display: none;
+  // display: none;
 }
+
+@media screen and (min-width: $mobile) {
+  // display: none;
+}
+@media screen and (min-width: $mobile) {
+  // display:flex;
+}
+
+
   
 }
 

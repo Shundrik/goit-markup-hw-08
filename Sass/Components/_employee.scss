@@ -10,47 +10,42 @@
   margin-top: 0;
   margin-bottom: 0;
 
-
   // @media screen and (min-width:$mobile){
 
   // }
-    
 
-  
-  @media screen and (min-width:$tablet){
+  @media screen and (min-width: $tablet) {
     // display: flex;
     // flex-wrap: wrap;
-    margin: -15px;
-
+    // margin: -15px;
   }
   // @media screen and (min-width:$desktop){
-  
 
   // }
 }
 
 .employee__item {
   background-color: #ffffff;
- 
-  
 
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-
-  @media screen and (min-width:$tablet){
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
     // display: flex;
     // flex-wrap: wrap;
-    margin: 15px;
-    width:calc((100% - 60px) / 2);
-
+    //  gap: 30px;
   }
-
 }
 
 .employee__title {

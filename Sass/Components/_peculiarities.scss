@@ -21,38 +21,39 @@
 }
 
 .peculiarities {
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
-
-  // @media screen and (min-width: $tablet) {
-  //   display: flex;
-
-    
-  // }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   
 }
 
 .peculiarities__item {
   display: inline-block;
+  width: 100%;
 
   @media screen and (min-width: $mobile) {
-    width: 100%;
-    margin-botom: 30px;
+    width:$mobile;
+  margin-bottom: 30px;
+    
   }
 
-  // @media screen and (min-width: $tablet) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   margin: 15px;
-  //   // min-width: 354px;
-  //   // width: ((100% - 60px) / 2);
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width:354px;
+  }
   
-  // @media screen and (min-width: $desktop) {
-  //   // margin: 15px;
-  //   min-width: 270px;
-  // }
+  @media screen and (min-width: $desktop) {
+    // margin: 15px;
+    width: 270px;
+  }
 
   &::before {
     display: block;
@@ -70,7 +71,15 @@
 
     background-color: #f5f4fa;
   }
-
+}
+.peculiarities__item:not(:last-child){
+  
+  @media screen and (min-width: $mobile) {
+      margin-bottom: 30px;
+    
+  }
+  
+  
 }
 
 .icon-antenna::before {
@@ -111,5 +120,6 @@
   line-height: 1.71;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0
+  ;
 }

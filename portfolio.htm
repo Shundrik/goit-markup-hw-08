@@ -94,12 +94,28 @@
             <li class="project__item">
               <a class="project___link" href="">
                 <div class="project___card">
-                  <img
-                    src="./img/portfolio/tehnokryk.jpg"
-                    alt=" ноутбук"
-                    width="370"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img\portfolio\tehnokryk\img@1x.webp 479w,
+                        ./img\portfolio\tehnokryk\img@2x.webp 767w,
+                        ./img\portfolio\tehnokryk\img@3x.webp 1200w
+                       
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="employee__img"
+                      srcset="
+                      ./img\portfolio\tehnokryk\img@1x.jpg 479w,
+                        ./img\portfolio\tehnokryk\img@2x.jpg 767w,
+                        ./img\portfolio\tehnokryk\img@3x.jpg 1200w
+                      "
+                      src="./img\portfolio\tehnokryk\img@1x.jpg 479w"
+                      alt="Технокряк"
+                      sizes="(min-widht:479px) 100vw, (min-widht:767px) 50vw,(min-widht:1200px) 25vw, 100vw "
+                    />
+                  </picture>
                   <p class="project___overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

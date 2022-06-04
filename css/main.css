@@ -540,6 +540,61 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../../img/hero/hero.jpg);
+}
+
+@media screen and (min-widgt: 480px) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-480@1x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-widgt: 480px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-480@2x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 480px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-widgt: 480px) and (min-resolution: 3dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-480@3x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 768px) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-768@1x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-widgt: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-768@2x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-widgt: 768px) and (min-resolution: 3dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-768@3x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 1200px) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-1600@1x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-widgt: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-1600@2x.jpg);
+  }
+}
+
+@media screen and (min-widgt: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-widgt: 1200px) and (min-resolution: 3dppx) {
+  .hero .hero {
+    background-image: url(../../img/hero/hero-1600@3x.jpg);
+  }
 }
 
 .hero__title {
@@ -1244,12 +1299,7 @@ img {
   }
 }
 
-.clients__item {
-  margin: 15px;
-  width: calc((100% - 2 * 30px) / 2);
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__item {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);

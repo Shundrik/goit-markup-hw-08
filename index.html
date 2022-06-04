@@ -19,30 +19,31 @@
       referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка -->
 
-
     <header class="header">
       <div class="conteiner main-header">
         <nav class="nav">
-          
           <a class="logo" href="./index.html">
             <span class="logo__web" lang="en">Web</span>
             <span class="logo__studio" lang="en"> Studio</span></a
           >
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./index.html">Студия</a>
+              <a class="nav__link nav__link--active" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link " href="./portfolio.htm">Портфолио</a>
+              <a class="nav__link" href="./portfolio.htm">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#footer">Контакты</a></li>
+              <a class="nav__link" href="#footer">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="authorization__list">
@@ -156,21 +157,46 @@
 
       <!-- Наша команда -->
 
-      <section class="section section--dgc-white ">
+      <section class="section section--dgc-white">
         <div class="conteiner">
           <h2 class="section__title">Наша команда</h2>
           <ul class="employee">
             <li class="employee__item">
               <picture>
-                <img class="employee__img"
-                src="./img/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
-
+                <source
+                  srcset="
+                    ./img\team\img-480\igor\img@1x.webp 479w,
+                    ./img\team\img-768\igor-354\img@1x.webp 479w,
+                    ./img\team\img-1200\igor-270\img@1x.webp 479w,
+                    ./img\team\img-480\igor\img@2x.webp 767w,
+                    ./img\team\img-768\igor-354\img@2x.webp 767w,
+                    ./img\team\img-1200\igor-270\img@2x.webp 767w,
+                    ./img\team\img-480\igor\img@3x.webp 1200w,
+                    ./img\team\img-768\igor-354\img@3x.webp 1200w,
+                    ./img\team\img-1200\igor-270\img@3x.webp 1200w
+                   
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="employee__img"
+                  srcset="
+                  ./img\team\img-480\igor\img@1x.jpg 479w,
+                  ./img\team\img-768\igor-354\img@1x.jpg 479w,
+                  ./img\team\img-1200\igor-270\img@1x.jpg 479w,
+                  ./img\team\img-480\igor\img@2x.jpg 767w,
+                  ./img\team\img-768\igor-354\img@2x.jpg 767w,
+                  ./img\team\img-1200\igor-270\img@2x.jpg 767w,
+                  ./img\team\img-480\igor\img@3x.jpg 1200w,
+                  ./img\team\img-768\igor-354\img@3x.jpg 1200w,
+                  ./img\team\img-1200\igor-270\img@3x.jpg 1200w
+                  "
+                  src="./img\team\img-480\igor\img@1x.jpg"
+                  alt="Игорь Демьяненко"
+                  sizes="(min-widht:479px) 100vw, (min-widht:767px) 50vw,(min-widht:1200px) 25vw, 100vw "
+                />
               </picture>
-             
+
               <div class="employee__card">
                 <h3 class="employee__title">Игорь Демьяненко</h3>
                 <p class="employee__text">Product Designer</p>
@@ -230,12 +256,40 @@
               </div>
             </li>
             <li class="employee__item">
-              <img class="employee__img"
-                src="./img/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img\team\img-480\olga\img@1x.webp 479w,
+                    ./img\team\img-768\olga-354\img@1x.webp 479w,
+                    ./img\team\img-1200\olga-270\img@1x.webp 479w,
+                    ./img\team\img-480\olga\img@2x.webp 767w,
+                    ./img\team\img-768\olga-354\img@2x.webp 767w,
+                    ./img\team\img-1200\olga-270\img@2x.webp 767w,
+                    ./img\team\img-480\olga\img@3x.webp 1200w,
+                    ./img\team\img-768\olga-354\img@3x.webp 1200w,
+                    ./img\team\img-1200\olga-270\img@3x.webp 1200w
+                   
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="employee__img"
+                  srcset="
+                  ./img\team\img-480\olga\img@1x.jpg 479w,
+                  ./img\team\img-768\olga-354\img@1x.jpg 479w,
+                  ./img\team\img-1200\olga-270\img@1x.jpg 479w,
+                  ./img\team\img-480\olga\img@2x.jpg 767w,
+                  ./img\team\img-768\olga-354\img@2x.jpg 767w,
+                  ./img\team\img-1200\olga-270\img@2x.jpg 767w,
+                  ./img\team\img-480\olga\img@3x.jpg 1200w,
+                  ./img\team\img-768\olga-354\img@3x.jpg 1200w,
+                  ./img\team\img-1200\olga-270\img@3x.jpg 1200w
+                  "
+                  src="./img\team\img-480\olga\img@1x.jpg"
+                  alt="Ольга Репина"
+                  sizes="(min-widht:479px) 100vw, (min-widht:767px) 50vw,(min-widht:1200px) 25vw, 100vw "
+                />
+              </picture>
               <div class="employee__card">
                 <h3 class="employee__title">Ольга Репина</h3>
                 <p class="employee__text">Frontend Developer</p>
@@ -295,12 +349,40 @@
               </div>
             </li>
             <li class="employee__item">
-              <img class="employee__img"
-                src="./img/nikolay.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img\team\img-480\nikolay\img@1x.webp 479w,
+                    ./img\team\img-768\nikolay-354\img@1x.webp 479w,
+                    ./img\team\img-1200\nikolay-270\img@1x.webp 479w,
+                    ./img\team\img-480nikolaya\img@2x.webp 767w,
+                    ./img\team\img-768nikolaya-354\img@2x.webp 767w,
+                    ./img\team\img-1200\nikolay-270\img@2x.webp 767w,
+                    ./img\team\img-480\nikolay\img@3x.webp 1200w,
+                    ./img\team\img-768\nikolay-354\img@3x.webp 1200w,
+                    ./img\team\img-1200\nikolay-270\img@3x.webp 1200w
+                   
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="employee__img"
+                  srcset="
+                  ./img\team\img-480\nikolay\img@1x.jpg 479w,
+                  ./img\team\img-768\nikolay-354\img@1x.jpg 479w,
+                  ./img\team\img-1200\nikolay-270\img@1x.jpg 479w,
+                  ./img\team\img-480\nikolay\img@2x.jpg 767w,
+                  ./img\team\img-768\nikolay-354\img@2x.jpg 767w,
+                  ./img\team\img-1200\nikolay-270\img@2x.jpg 767w,
+                  ./img\team\img-480\nikolay\img@3x.jpg 1200w,
+                  ./img\team\img-768\nikolay-354\img@3x.jpg 1200w,
+                  ./img\team\img-1200\nikolay-270\img@3x.jpg 1200w
+                  "
+                  src="./img\team\img-480\nikolay\img@1x.jpg"
+                  alt="Николай Тарасов"
+                  sizes="(min-widht:479px) 100vw, (min-widht:767px) 50vw,(min-widht:1200px) 25vw, 100vw "
+                />
+              </picture>
               <div class="employee__card">
                 <h3 class="employee__title">Николай Тарасов</h3>
                 <p class="employee__text">Marketing</p>
@@ -360,12 +442,40 @@
               </div>
             </li>
             <li class="employee__item">
-              <img class="employee__img"
-                src="./img/mihail.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img\team\img-480\mihail\img@1x.webp 479w,
+                    ./img\team\img-768\mihail-354\img@1x.webp 479w,
+                    ./img\team\img-1200\mihail-270\img@1x.webp 479w,
+                    ./img\team\img-480\mihail\img@2x.webp 767w,
+                    ./img\team\img-768\mihail-354\img@2x.webp 767w,
+                    ./img\team\img-1200\mihail-270\img@2x.webp 767w,
+                    ./img\team\img-480\mihail\img@3x.webp 1200w,
+                    ./img\team\img-768\mihail-354\img@3x.webp 1200w,
+                    ./img\team\img-1200\mihail-270\img@3x.webp 1200w
+                   
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="employee__img"
+                  srcset="
+                  ./img\team\img-480\mihail\img@1x.jpg 479w,
+                  ./img\team\img-768\mihail-354\img@1x.jpg 479w,
+                  ./img\team\img-1200\mihail-270\img@1x.jpg 479w,
+                  ./img\team\img-480\mihail\img@2x.jpg 767w,
+                  ./img\team\img-768\mihail-354\img@2x.jpg 767w,
+                  ./img\team\img-1200\mihail-270\img@2x.jpg 767w,
+                  ./img\team\img-480\mihail\img@3x.jpg 1200w,
+                  ./img\team\img-768\mihail-354\img@3x.jpg 1200w,
+                  ./img\team\img-1200\mihail-270\img@3x.jpg 1200w
+                  "
+                  src="./img\team\img-480\mihail\img@1x.jpg"
+                  alt="Михаил Ермаков"
+                  sizes="(min-widht:479px) 100vw, (min-widht:767px) 50vw,(min-widht:1200px) 25vw, 100vw "
+                />
+              </picture>
               <div class="employee__card">
                 <h3 class="employee__title">Михаил Ермаков</h3>
                 <p class="employee__text">UI Designer</p>
@@ -516,10 +626,14 @@
         <div class="address">
           <a class="logo" href="./index.html">
             <span class="logo__web" lang="en">Web</span>
-            <span class="logo__studio logo__studio--white-color {" lang="en">Studio</span></a
+            <span class="logo__studio logo__studio--white-color {" lang="en"
+              >Studio</span
+            ></a
           >
           <address class="contact-address">
-            <span class="contact-address__text">г. Киев, пр-т Леси Украинки, 26</span>
+            <span class="contact-address__text"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
 
             <ul class="contact-address__list">
               <li class="contact-address__item">
@@ -627,7 +741,8 @@
         <form class="modal-data__form">
           <div class="data-group">
             <label class="data-group__label" for="text">Имя</label>
-            <input class="data-group__input"
+            <input
+              class="data-group__input"
               type="text"
               name="user-name"
               id="text"
@@ -680,7 +795,6 @@
               <span class="data-checkbox__icon"></span>
 
               Соглашаюсь с рассылкой и принимаю
-             
             </label>
             <a class="data-checkbox__link" href="">Условия договора</a>
           </div>

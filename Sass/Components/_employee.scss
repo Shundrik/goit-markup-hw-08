@@ -10,18 +10,16 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  // @media screen and (min-width:$mobile){
-
-  // }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+     }
 
   @media screen and (min-width: $tablet) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin: -15px;
+    
   }
-  // @media screen and (min-width:$desktop){
-
-  // }
+ 
 }
 
 .employee__item {
@@ -39,12 +37,18 @@
     display: flex;
     flex-wrap: wrap;
     margin: 15px;
+     }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
     width: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: $desktop) {
-    // display: flex;
-    // flex-wrap: wrap;
-    //  gap: 30px;
+    display: flex;
+    width: calc((100% - 120px) / 4);
+    
   }
 }
 

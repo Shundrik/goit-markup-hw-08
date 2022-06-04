@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+   
+
   list-style: none;
 
   @media screen and (min-width: $mobile) {
@@ -22,6 +27,9 @@
 
 .clients__item {
 
+  margin: 15px;
+  width: calc((100% - 2 * 30px) / 2);
+  
     @media screen and (min-width: $mobile) {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);

@@ -5,6 +5,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  text-align: center;
+
   @media screen and (min-width: $mobile) {
     text-align: center;
   }
@@ -17,7 +19,10 @@
 /* адрес в подвале */
 
 .address {
-
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  
   @media screen and (min-width: $tablet) {
     display: inline-flex;
     flex-direction: column;
@@ -39,6 +44,8 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+
+  margin-bottom: 8px;
 
   @media screen and (min-width: $mobile) {
     margin-bottom: 8px;
@@ -101,6 +108,9 @@
 }
 
 .join {
+margin-bottom: 60px;
+
+
   @media screen and (min-width: $mobile) {
     margin-bottom: 60px;
   }
@@ -117,6 +127,11 @@
 }
 
 .join__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 20px;
+
   @media screen and (min-width: $mobile) {
     display: flex;
     justify-content: center;
@@ -189,10 +204,14 @@
 .email {
   margin-bottom: 20px;
 
+  display: flex;
+    justify-content: center;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
   }
+
   @media screen and (min-width: $desktop) {
     text-align: start;
   }

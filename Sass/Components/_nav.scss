@@ -1,8 +1,8 @@
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
-
-  
+  // justify-content: space-between;
 }
 
 .nav__list {
@@ -18,22 +18,22 @@
   font-size: 14px;
   line-height: 1.07;
 
-@media screen and (min-width: $mobile) {
-  // display: none;
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    // display:flex;
+  }
 }
 
-@media screen and (min-width: $mobile) {
-  // display: none;
+.nav__item {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
 }
-@media screen and (min-width: $mobile) {
-  // display:flex;
-}
-
-
-  
-}
-
-
 
 .nav__link {
   position: relative;
@@ -51,17 +51,16 @@
   padding-bottom: 32px;
 
   transition-property: color;
-  transition-duration:$transition-duration;
+  transition-duration: $transition-duration;
   transition-timing-function: $timing-bezier;
 
   &:hover,
   &:focus {
     color: $accent-color;
   }
-   
 }
 .nav__link--active {
-  color:$accent-color;
+  color: $accent-color;
 }
 
 .nav__link--active::after {
@@ -75,11 +74,79 @@
 
   margin: 0;
   padding: 0;
-  background-color:$accent-color;
+  background-color: $accent-color;
 }
 
 .nav__item + .nav__item {
   margin-left: 50px;
 }
 
+.nav__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0%;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 
+
+
+  color: $primary-text-color;
+  fill: currentColor;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  @media screen and (max-width: 767.9px) {
+    margin-left: auto;
+  }
+
+
+  @media screen and (min-width: 767.9px) {
+    display: none;
+  }
+}
+
+.nav__btn .nav-btn__close{
+  display: none;
+
+}
+
+.nav__btn.is-open .nav-btn__close{
+  display: block;
+}
+
+.nav__btn.is-open .nav-btn__menu{
+  display: none;
+}
+
+.nav__menu{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+
+  display: none;
+
+  background-color:#ffffff;
+  padding: 20px;
+  text-align: center;
+
+
+}
+
+.nav__menu.is-open{
+  display: block;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      text-decoration: none;
+      list-style: none;
+    }
+
+  }
+
+}

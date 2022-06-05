@@ -27,12 +27,12 @@
 
     <header class="header">
       <div class="conteiner main-header">
-        <nav class="nav">
+        <nav class="nav" >
           <a class="logo" href="./index.html">
             <span class="logo__web" lang="en">Web</span>
             <span class="logo__studio" lang="en"> Studio</span></a
           >
-          <ul class="nav__list">
+          <ul class="nav__list is-hidden" >
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="./index.html"
                 >Студия</a
@@ -45,6 +45,89 @@
               <a class="nav__link" href="#footer">Контакты</a>
             </li>
           </ul>
+          <button class="nav__btn " type="button" 
+          aria-expanded="false"
+          data-menu-button> 
+            <svg class="nav-btn__svg" 
+            width="40" 
+            height="40"
+            aria-label="переключтаель мобильного">
+              <use class="nav-btn__close"  href="./img/icons/symbol-defs.svg#close"></use>
+              <use class="nav-btn__menu" href="./img/icons/symbol-defs.svg#menu"></use>
+
+            </svg>
+          </button>
+
+<!-- Навигационное МЕНЮ -->
+           
+          <div class="nav__menu" data-menu>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./portfolio.htm">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <ul class="employeeSocial">
+            <li class="employeeSocial__item">
+              <a
+                class="employeeSocial__link"
+                target="_blank"
+                aria-label="instagram"
+                href="https://www.instagram.com"
+              >
+                <svg class="employeeSocial__svg">
+                  <use href="./img/icons/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employeeSocial__item">
+              <a
+                class="employeeSocial__link"
+                aria-label="tweeter"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://twitter.com/?lang=ru"
+              >
+                <svg class="employeeSocial__svg">
+                  <use href="./img/icons/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employeeSocial__item">
+              <a
+                class="employeeSocial__link"
+                aria-label="facebook"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://www.facebook.com/"
+              >
+                <svg class="employeeSocial__svg">
+                  <use href="./img/icons/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="employeeSocial__item">
+              <a
+                class="employeeSocial__link"
+                aria-label="linkid"
+                target="_blank"
+                rel="no-referrer nofollow"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="employeeSocial__svg">
+                  <use href="./img/icons/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+    
+          </div>
         </nav>
         <ul class="authorization__list">
           <li class="authorization__item">
@@ -804,5 +887,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

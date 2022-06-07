@@ -1,6 +1,5 @@
 .nav {
-  position: relative;
-  display: flex;
+    display: flex;
   align-items: center;
   // justify-content: space-between;
 }
@@ -10,6 +9,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  margin-left: 88px;
 
   list-style: none;
   color: $primary-text-color;
@@ -18,8 +18,7 @@
   font-size: 14px;
   line-height: 1.07;
 
-  @media screen and (min-width: $mobile) {
-  }
+  
 
   @media screen and (max-width: 767.9px) {
     display: none;
@@ -122,31 +121,3 @@
   display: none;
 }
 
-.nav__menu{
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-
-  display: none;
-
-  background-color:#ffffff;
-  padding: 20px;
-  text-align: center;
-
-
-}
-
-.nav__menu.is-open{
-  display: block;
-  ul{
-    margin: 0;
-    padding: 0;
-    li{
-      text-decoration: none;
-      list-style: none;
-    }
-
-  }
-
-}

@@ -47,7 +47,9 @@
           </ul>
           <button class="nav__btn " type="button" 
           aria-expanded="false"
-          data-menu-button> 
+          aria-controls="nav-menu"
+          data-menu-button
+          > 
             <svg class="nav-btn__svg" 
             width="40" 
             height="40"
@@ -60,81 +62,94 @@
 
 <!-- Навигационное МЕНЮ -->
            
-          <div class="nav__menu" data-menu>
-            <li class="nav__item">
-              <a class="nav__link nav__link--active" href="./index.html"
-                >Студия</a
+          <div class="nav-menu" id="nav-menu" data-menu>
+           <div class="nav-menu-wrapper">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link nav__link--active" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./portfolio.htm">Портфолио</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </ul>
+          <ul class="nav-menu-authorization__list">
+            
+            <li class="nav-menu-authorization__item">
+              <a class="nav-menu-authorization__link" href="tel:+380961111111">
+                <span class="nav-menu-authorizationTel">+38 096 111 11 11</span>
+                </a
               >
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.htm">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#footer">Контакты</a>
+            <li class="nav-menu-authorization__item">
+              <a class="nav-menu-authorization__link" href="mailto:info@destudio.com">
+                <span class="nav-menu-authorizationMail">info@destudio.com</span>
+              </a>
             </li>
           </ul>
-          <ul class="employeeSocial">
-            <li class="employeeSocial__item">
+          <ul class="nav-menu-social">
+            <li class="nav-menu-social__item">
               <a
-                class="employeeSocial__link"
+                class="nav-menu-social__link"
                 target="_blank"
                 aria-label="instagram"
                 href="https://www.instagram.com"
               >
-                <svg class="employeeSocial__svg">
-                  <use href="./img/icons/symbol-defs.svg#instagram"></use>
-                </svg>
+              <span class="nav-menu-social__icon">              instagram
+              </span>
+              
               </a>
             </li>
-            <li class="employeeSocial__item">
+            <li class="nav-menu-social__item">
               <a
-                class="employeeSocial__link"
+                class="nav-menu-social__link"
                 aria-label="tweeter"
                 target="_blank"
                 rel="no-referrer nofollow"
                 href="https://twitter.com/?lang=ru"
               >
-                <svg class="employeeSocial__svg">
-                  <use href="./img/icons/symbol-defs.svg#twitter"></use>
-                </svg>
+              <span class="nav-menu-social__icon">
+              tweeter
               </a>
             </li>
-            <li class="employeeSocial__item">
+            <li class="nav-menu-social__item">
               <a
-                class="employeeSocial__link"
+                class="nav-menu-social__link"
                 aria-label="facebook"
                 target="_blank"
                 rel="no-referrer nofollow"
                 href="https://www.facebook.com/"
               >
-                <svg class="employeeSocial__svg">
-                  <use href="./img/icons/symbol-defs.svg#facebook"></use>
-                </svg>
+               <span class="nav-menu-social__icon">facebook</span>
+              
               </a>
             </li>
-            <li class="employeeSocial__item">
+            <li class="nav-menu-social__item">
               <a
-                class="employeeSocial__link"
+                class="nav-menu-social__link"
                 aria-label="linkid"
                 target="_blank"
                 rel="no-referrer nofollow"
                 href="https://www.linkedin.com/"
+                
               >
-                <svg class="employeeSocial__svg">
-                  <use href="./img/icons/symbol-defs.svg#linkedin"></use>
-                </svg>
+               <span class="nav-menu-social__icon">linkid</span>
+              
               </a>
             </li>
           </ul>
-    
+           </div>
           </div>
+
         </nav>
         <ul class="authorization__list">
           <li class="authorization__item">
             <a class="authorization__link" href="mailto:info@destudio.com">
-              <svg class="authorization__svg envelop">
-                <use href="./img/icons/symbol-defs.svg#envelope"></use>
-              </svg>
               info@destudio.com
             </a>
           </li>
@@ -438,8 +453,8 @@
                     ./img\team\img-480\nikolay\img@1x.webp 479w,
                     ./img\team\img-768\nikolay-354\img@1x.webp 479w,
                     ./img\team\img-1200\nikolay-270\img@1x.webp 479w,
-                    ./img\team\img-480nikolaya\img@2x.webp 767w,
-                    ./img\team\img-768nikolaya-354\img@2x.webp 767w,
+                    ./img\team\img-480\nikolay\img@2x.webp 767w,
+                    ./img\team\img-768\nikolay-354\img@2x.webp 767w,
                     ./img\team\img-1200\nikolay-270\img@2x.webp 767w,
                     ./img\team\img-480\nikolay\img@3x.webp 1200w,
                     ./img\team\img-768\nikolay-354\img@3x.webp 1200w,

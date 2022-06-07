@@ -5,7 +5,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-   
 
   list-style: none;
 
@@ -16,32 +15,24 @@
   }
 
   @media screen and (min-width: $tablet) {
-    //  flex-basis: 33,3%;
     margin: -15px;
   }
   @media screen and (min-width: $desktop) {
-    //  flex-basis: 33,3%;
     margin: -15px;
   }
 }
 
 .clients__item {
-
-  // margin: 15px;
-  // width: calc((100% - 2 * 30px) / 2);
-  
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
 
-  @media screen and (min-width:$tablet) {
-    //  flex-basis: 33,3%;
+  @media screen and (min-width: $tablet) {
     margin: 15px;
     width: calc((100% - 6 * 15px) / 3);
   }
-  @media screen and (min-width:$desktop) {
-    //  flex-basis: 33,3%;
+  @media screen and (min-width: $desktop) {
     margin: 15px;
     width: calc((100% - 12 * 15px) / 6);
   }

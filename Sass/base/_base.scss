@@ -50,10 +50,13 @@ img {
   margin-left: 0;
   margin-right: 0;
 
-  @media screen and (min-width: $mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // @media screen and (max-width: 767.9px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;

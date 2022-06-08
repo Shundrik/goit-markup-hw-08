@@ -9,7 +9,7 @@
     @media screen and (min-width:$mobile) {
       margin:-15px;
        display: flex;
-    flex-wrap: wrap;
+      flex-wrap: wrap;
     }
 
   }
@@ -26,21 +26,21 @@
    
 
 
-    @media screen and (min-width:$mobile) {
-      max-width: 370px;
+    @media screen and (max-width:767.99) {
+      & + &{
+        margin-top: 30px;
+      }
     }
 
     @media screen and (min-width:$tablet) {
-      display: flex;
-      flex-wrap: wrap;  
-      width: 354px;
+     
      
       margin:15px;
-      width: ((100%  - 2 * 30 px) / 2);   
+      width: calc((100%  - 2 * 30px) / 2);   
     }
     
     @media screen and (min-width:$desktop) {
-      width: ((100%  - 90 px) / 3);   
+      width: calc((100%  - 90px) / 3);   
     }
     
 

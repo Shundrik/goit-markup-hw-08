@@ -25,37 +25,43 @@
   margin-bottom: 0;
   padding: 0;
   list-style: none;
+  
+  
  
-
-
-  @media screen and (min-width: 767px) {
-    margin: -15px;
+  @media screen and (min-width: $mobile) {
+    // width: 100%;
   }
 
   @media screen and (min-width: $tablet) {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
     margin: -15px;
   }
+
 }
 
 .peculiarities__item {
-  display: inline-block;
-  width: 100%;
+  // display: inline-block;
+  // width: 100%;
 
-  @media screen and (max-width: 767px) {
-      width: 450px;
+  @media screen and (max-width: 767.99px) {
+    
+      & + &{
+        margin-top: 30px;
+      }
   }
 
   @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
+  
     margin: 15px;
-    width: 354px;
+    width: calc((100% - 2 * 30px) / 2);
   }
 
   @media screen and (min-width: $desktop) {
-    width: 270px;
+    width: calc((100% - 4 * 30px) /4);
   }
 
   &::before {
@@ -75,11 +81,11 @@
     background-color: #f5f4fa;
   }
 }
-@media screen and(max-widht:767px) {
-  .peculiarities__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
+// @media screen and (max-widht:767px) {
+//   .peculiarities__item:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+// }
 
 .icon-antenna::before {
   background-image: url(../img/icons/antenna.svg);

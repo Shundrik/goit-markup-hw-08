@@ -27,12 +27,12 @@ img {
   padding-right: 15px;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    width: 450px;
     // background-color: teal;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    width:738px;
     background-color: orange;
   }
 

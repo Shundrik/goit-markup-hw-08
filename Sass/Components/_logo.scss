@@ -1,11 +1,8 @@
 .logo {
-  
-
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
 
   @media screen and (max-width: 767.9px) {
     display: flex;
@@ -18,16 +15,11 @@
     justify-content: center;
     padding: 0;
     margin-top: 0;
-    
-    
   }
   @media screen and (min-width: $desktop) {
-   
     justify-content: flex-start;
-    margin-right:93px;
+    margin-right: 93px;
     padding: 0%;
-    
-  
   }
 }
 .logo__web {
@@ -43,15 +35,8 @@
   color: #ffffff;
   margin-bottom: 20px;
 
-
-  
   @media screen and (min-width: $tablet) {
-    
-    
   }
   @media screen and (min-width: $desktop) {
-   
-  
-  
   }
 }

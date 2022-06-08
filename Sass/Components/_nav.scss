@@ -81,18 +81,19 @@
 }
 
 .nav__btn {
-  display: inline-flex;
+    display: inline-flex;
   justify-content: center;
   align-content: center;
+
   padding: 0%;
   margin: 0;
   border: none;
   background-color: transparent;
 
-
-
   color: $primary-text-color;
   fill: currentColor;
+
+  z-index: 100;
 
   &:hover {
     color: $accent-color;

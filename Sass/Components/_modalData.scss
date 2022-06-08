@@ -11,30 +11,32 @@
 
   opacity: 1;
   transition: opacity 250ms $timing-bezier;
-
-
-
-
-  
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: visible;
 }
- .modal-data {
+.modal-data {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
   padding: 40px 40px;
   background-color: rgba(255, 255, 255, 1);
 
   transition-duration: 1000ms;
   transition-timing-function: $timing-bezier;
+
+  @media screen and (max-width:  1199.99px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-data-btn {
   position: absolute;
@@ -57,16 +59,15 @@
   margin: auto auto;
   transition-property: fill;
   transition-duration: $transition-duration;
-  transition-timing-function:$timing-bezier;
+  transition-timing-function: $timing-bezier;
 
   &:hover {
     background-color: transparent;
     fill: $accent-color;
   }
-
 }
 
-.modal-data__form{
+.modal-data__form {
   display: inline-block;
 
   width: 100%;
@@ -83,9 +84,8 @@
   margin-bottom: 12px;
   padding: 0;
   margin-top: 0;
+  
 }
-
-
 
 .data__btn {
   display: flex;
@@ -103,7 +103,6 @@
 
   border-color: transparent;
   border-radius: 4px;
-  
 
   font-weight: 700;
   font-size: 16px;
@@ -111,11 +110,8 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  &:hover{
+  &:hover {
     background-color: #188ce8;
     cursor: pointer;
-  
-  } 
-  
+  }
 }
-

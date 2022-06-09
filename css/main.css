@@ -2140,13 +2140,13 @@ img {
 @media screen and (min-width: 768px) {
   .project__item {
     margin: 15px;
-    width: calc((100%  - 2 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project__item {
-    width: calc((100%  - 90px) / 3);
+    width: calc((100% - 90px) / 3);
   }
 }
 

@@ -1,5 +1,5 @@
 .nav {
-    display: flex;
+  display: flex;
   align-items: center;
   // justify-content: space-between;
 }
@@ -17,8 +17,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.07;
-
-  
 
   @media screen and (max-width: 767.9px) {
     display: none;
@@ -81,7 +79,7 @@
 }
 
 .nav__btn {
-    display: inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-content: center;
 
@@ -103,22 +101,19 @@
     margin-left: auto;
   }
 
-
   @media screen and (min-width: 767.9px) {
     display: none;
   }
 }
 
-.nav__btn .nav-btn__close{
+.nav__btn .nav-btn__close {
   display: none;
-
 }
 
-.nav__btn.is-open .nav-btn__close{
+.nav__btn.is-open .nav-btn__close {
   display: block;
 }
 
-.nav__btn.is-open .nav-btn__menu{
+.nav__btn.is-open .nav-btn__menu {
   display: none;
 }
-

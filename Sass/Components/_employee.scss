@@ -3,10 +3,8 @@
 }
 
 .employee {
-  
   text-align: center;
   list-style: none;
-
 
   padding: 0;
   margin-top: 0;
@@ -16,12 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-     }
-
-  @media screen and (min-width: $tablet) {
-    
   }
- 
 }
 
 .employee__item {
@@ -35,15 +28,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
- 
-
-
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 15px;
-     }
+  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -54,10 +44,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     width: calc((100% - 120px) / 4);
-    
   }
-
-  }
+}
 
 .employee__title {
   font-weight: 500;

@@ -29,7 +29,7 @@
   transition-duration: 1000ms;
   transition-timing-function: $timing-bezier;
 
-  @media screen and (max-width:  1199.99px) {
+  @media screen and (max-width: 1199.99px) {
     width: 450px;
     height: 609px;
   }
@@ -84,7 +84,6 @@
   margin-bottom: 12px;
   padding: 0;
   margin-top: 0;
-  
 }
 
 .data__btn {

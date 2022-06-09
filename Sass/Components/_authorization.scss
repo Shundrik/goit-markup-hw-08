@@ -31,11 +31,8 @@
     flex-direction: column;
     & + & {
       margin-top: 10px;
-
     }
-      
   }
-
 }
 
 .authorization__item + .authorization__item {

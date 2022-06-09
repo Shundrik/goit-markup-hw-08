@@ -28,19 +28,16 @@
     font-size: 12px;
     line-height: 1.17;
   }
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
   }
 }
 
 .data-checkbox__label {
   display: flex;
   align-items: center;
-
-  
 
   transition-property: border-color;
   transition-duration: $transition-duration;

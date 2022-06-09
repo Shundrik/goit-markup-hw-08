@@ -23,11 +23,11 @@
 
   list-style: none;
 
-  @media screen and (max-width: 767.9px) {
+  @media screen and (max-width: 767.99px) {
     display: none;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: 1199.99px) {
     flex-direction: column;
     & + & {
       margin-top: 10px;
@@ -35,8 +35,6 @@
     }
       
   }
-
-
 
 }
 

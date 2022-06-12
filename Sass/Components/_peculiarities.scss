@@ -73,11 +73,6 @@
     background-color: #f5f4fa;
   }
 }
-// @media screen and (max-widht:767px) {
-//   .peculiarities__item:not(:last-child) {
-//     margin-bottom: 30px;
-//   }
-// }
 
 .icon-antenna::before {
   background-image: url(../img/icons/antenna.svg);
@@ -92,9 +87,6 @@
   background-image: url(../img/icons/astronaut.svg);
 }
 
-// .peculiarities__item + .peculiarities__item {
-//   margin-left: 30px;
-// }
 
 .peculiarities__title {
   display: block;
@@ -107,6 +99,11 @@
 
   margin-top: 0;
   margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+
+}
 }
 
 .peculiarities__text {

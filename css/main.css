@@ -336,7 +336,7 @@ img {
 
 @media screen and (max-width: 768.99px) {
   .main-header {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -508,7 +508,13 @@ img {
   background-color: transparent;
   color: #212121;
   fill: currentColor;
-  z-index: 100;
+  z-index: 10;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__btn:hover {
@@ -552,7 +558,7 @@ img {
   display: none;
   background-color: #ffffff;
   padding: 48px 40px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .nav-menu ul {
@@ -759,13 +765,15 @@ img {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 188px;
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -894,6 +902,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
@@ -914,6 +923,14 @@ img {
           transition-duration: 1000ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-data {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 @media screen and (max-width: 1199.99px) {
@@ -1685,7 +1702,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .contact-address {
-    margin-bottom: 8px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1709,12 +1726,19 @@ img {
 }
 
 .contact-address__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-bottom: 8px;
 }
 
+.contact-address__item + .contact-address__item {
+  margin-top: 8px;
+}
+
 @media screen and (min-width: 1200px) {
-  .contact-address__item:not(:last-child) {
-    margin-bottom: 8px;
+  .contact-address__item + .contact-address__item {
+    margin-top: 9px;
   }
 }
 
@@ -1726,12 +1750,6 @@ img {
   padding: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .contact-address__list {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .contact-address__list {
     margin: 0;
@@ -1740,12 +1758,6 @@ img {
 
 .contact-address__link {
   color: rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (min-width: 480px) {
-  .contact-address__link {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2214,10 +2226,10 @@ img {
 .project___overlay {
   position: absolute;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   margin: 0;
-  padding: 63px 24px;
+  padding: 2px;
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
@@ -2233,6 +2245,24 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .project___overlay {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project___overlay {
+    padding: 49px 24px 77px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project___overlay {
+    padding: 63px 24px;
+  }
 }
 
 .project__item:hover .project___overlay {

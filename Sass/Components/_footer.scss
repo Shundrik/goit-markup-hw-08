@@ -48,7 +48,7 @@
   margin-bottom: 8px;
 
   @media screen and (min-width: $mobile) {
-    margin-bottom: 8px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet) {
     width: 232px;
@@ -61,12 +61,18 @@
 }
 
 .contact-address__text {
+  display: inline-flex;
   margin-bottom: 8px;
 }
 
-.contact-address__item:not(:last-child) {
+.contact-address__item + .contact-address__item{
+  
+  margin-top: 8px;
+  
+  
   @media screen and (min-width: $desktop) {
-    margin-bottom: 8px;
+
+    margin-top: 9px;
   }
 }
 
@@ -78,9 +84,7 @@
   margin-bottom: 0;
   padding: 0;
 
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 60px;
-  }
+  
   @media screen and (min-width: $desktop) {
     margin: 0;
   }
@@ -89,9 +93,7 @@
 .contact-address__link {
   color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 60px;
-  }
+  
   @media screen and (min-width: $desktop) {
     margin: 0px;
   }

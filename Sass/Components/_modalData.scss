@@ -11,6 +11,8 @@
 
   opacity: 1;
   transition: opacity 250ms $timing-bezier;
+  z-index: 100;
+
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -28,7 +30,10 @@
 
   transition-duration: 1000ms;
   transition-timing-function: $timing-bezier;
-
+ @media screen and (max-width: $mobile) {
+    max-width: 100%;
+    max-height: 100%;
+  }
   @media screen and (max-width: 1199.99px) {
     width: 450px;
     height: 609px;
@@ -37,6 +42,8 @@
     width: 528px;
     height: 581px;
   }
+z-index: 100;
+
 }
 .modal-data-btn {
   position: absolute;
@@ -108,6 +115,11 @@
   line-height: 1.88;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+
+
+
 
   &:hover {
     background-color: #188ce8;

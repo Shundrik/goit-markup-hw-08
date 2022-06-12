@@ -8,8 +8,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  
 }
 
 .project__item {
@@ -63,11 +61,11 @@
   position: absolute;
   top: 0;
 
-  width: 100%;
-  height: 100%;
+ max-width: 100%;
+height: 100%;
 
   margin: 0;
-  padding: 63px 24px;
+  padding:2px;
 
   font-size: 18px;
   line-height: 1.56;
@@ -81,6 +79,20 @@
   transition-property: transform;
   transition-duration: $transition-duration;
   transition-timing-function: $timing-bezier;
+  
+  @media screen and (min-width: $mobile) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px 77px 24px;
+  }
+    
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px;
+  }
+
+
 }
 
 .project__item:hover .project___overlay {
@@ -89,24 +101,16 @@
 }
 
 .project___info {
-  
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 
-
   @media screen and (min-width: $tablet) {
     // display: flex;
     flex-grow: 1;
-    
-   
   }
-
- 
 }
-
-
 
 .project___title {
   color: $primary-text-color;
@@ -118,9 +122,6 @@
   margin-top: 0;
   margin-bottom: 4px;
   letter-spacing: 0.06em;
-
-  
-
 }
 
 .project___text {
@@ -133,4 +134,3 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-

@@ -1,11 +1,15 @@
 .hero {
   text-align: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 188px;
+
+  
 
   @media screen and (min-width:$desktop) {
     max-width: 1600px;
+    padding-top: 200px;
+  padding-bottom: 200px;
   }
   
 }

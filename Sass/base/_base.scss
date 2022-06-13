@@ -7,7 +7,12 @@ body {
   color: $primary-text-color;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  
+&.modal-open{
+  overflow-y: hidden;
 }
+}
+
 
 a {
   text-decoration: none;

@@ -4,14 +4,19 @@
   padding-top: 118px;
   padding-bottom: 188px;
 
-  
+  // @media screen and (min-width: $mobile) {
+  //   width: 480px;
+  //   height: 400px;
+  // }
+  // @media screen and (min-width: $tablet) {
+  //   width: 768px;
+  //   height: 400px;
+  // }
 
-  @media screen and (min-width:$desktop) {
-    max-width: 1600px;
-    padding-top: 200px;
-  padding-bottom: 200px;
-  }
-  
+  // @media screen and (min-width: $desktop) {
+  //   width: 1600px;
+  //   height: 600px;
+  // }
 }
 
 .hero__title {
@@ -29,8 +34,6 @@
 
   text-align: center;
   text-transform: uppercase;
-
-
 }
 
 .overlay {
@@ -47,43 +50,70 @@
 
   background-color: $secondary-bg-color;
 
-  @media screen and (min-width: 479.99px) {
-    background-image: 
-    linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),url(../img/hero/hero-480@1x.jpg);
-  }
-  @media (min-resolution: 2dppx) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-480@2x.jpg);
+// @media screen and (min-width: $mobile) {
+//     width: 480px;
+//     height: 400px;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     width: 768px;
+//     height: 400px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     width: 1600px;
+//     height: 600px;
+//   }
+
+  @media screen and (min-width:$mobile) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-480@1x.jpg);
   }
 
-  @media (min-resolution: 3dppx) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-480@3x.jpg);
+ 
+  @media  (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-480@2x.jpg);
+      
   }
 
-  @media screen and (min-width: $mobile) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-768@1x.jpg);
+  @media  (min-device-pixel-ratio: 3),
+    (min-resolution:288dpi),
+    (min-resolution:3dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-480@3x.jpg);
   }
-  @media (min-resolution: 2dppx) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-768@2x.jpg);
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-768@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-768@2x.jpg);
   }
 
   @media (min-resolution: 3dppx) {
@@ -95,18 +125,20 @@
   }
 
   @media screen and (min-width: $desktop) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-1600@1x.jpg);
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-1600@1x.jpg);
   }
   @media (min-resolution: 2dppx) {
-    background-image:linear-gradient(
-      to left,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../img/hero/hero-1600@2x.jpg);
+    background-image: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-1600@2x.jpg);
   }
 
   @media (min-resolution: 3dppx) {
@@ -116,7 +148,6 @@
       rgba(47, 48, 58, 0.4)
     ), url(../img/hero/hero-1600@3x.jpg);
   }
-
 }
 
 .hero_btn {

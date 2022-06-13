@@ -262,39 +262,71 @@
           <ul class="employee">
             <li class="employee__item">
               <picture>
-                <source
+                <source 
+                media="(max-width: 767.99px)"
                   srcset="
-                    ./img/team/img-480/igor/img@1x.webp 479w,
-                    ./img/team/img-768/igor-354/img@1x.webp 479w,
-                    ./img/team/img-1200/igor-270/img@1x.webp 479w,
-                    ./img/team/img-480/igor/img@2x.webp 767w,
-                    ./img/team/img-768/igor-354/img@2x.webp 767w,
-                    ./img/team/img-1200/igor-270/img@2x.webp 767w,
-                    ./img/team/img-480/igor/img@3x.webp 1200w,
-                    ./img/team/img-768/igor-354/img@3x.webp 1200w,
-                    ./img/team/img-1200/igor-270/img@3x.webp 1200w
-                   
+                    ./img/team/img-480/igor/img@1x.webp 1x,
+                    ./img/team/img-480/igor/img@2x.webp 2x,
+                    ./img/team/img-480/igor/img@3x.webp 3x
                   "
                   type="image/webp"
                 />
-                <img
-                  class="employee__img"
+
+                <source 
+                media="(max-width: 767.99px)"
                   srcset="
-                  ./img/team/img-480/igor/img@1x.jpg 479w,
-                  ./img/team/img-768/igor-354/img@1x.jpg 479w,
-                  ./img/team/img-1200/igor-270/img@1x.jpg 479w,
-                  ./img/team/img-480/igor/img@2x.jpg 767w,
-                  ./img/team/img-768/igor-354/img@2x.jpg 767w,
-                  ./img/team/img-1200/igor-270/img@2x.jpg 767w,
-                  ./img/team/img-480/igor/img@3x.jpg 1200w,
-                  ./img/team/img-768/igor-354/img@3x.jpg 1200w,
-                  ./img/team/img-1200/igor-270/img@3x.jpg 1200w
-                  "
+                  ./img/team/img-480/igor/img@1x.jpg 1x,
+                  ./img/team/img-480/igor/img@2x.jpg 2x,
+                  ./img/team/img-480/igor/img@3x.jpg 3x
+                "
+                  type="image/jpg"
+                />
+
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/team/img-768/igor-354/img@1x.webp 1x,
+                  ./img/team/img-768/igor-354/img@2x.webp 2x,
+                  ./img/team/img-768/igor-354/img@3x.webp 3x
+                "
+                type="image/webp"
+                />
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ./img/team/img-768/igor-354/img@1x.jpg 1x,
+                ./img/team/img-768/igor-354/img@2x.jpg 2x,
+                ./img/team/img-768/igor-354/img@3x.jpg 3x
+                "
+                type="image/jpg"
+                />
+
+                <source 
+                media="(min-width: 1200px)"
+                srcset="
+                ./img/team/img-1200/igor-270/img@1x.webp 1x,
+                ./img/team/img-1200/igor-270/img@2x.webp 2x,
+                ./img/team/img-1200/igor-270/img@3x.webp 3x
+                "
+                type="image/webp"
+                />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="
+                ./img/team/img-1200/igor-270/img@1x.jpg 1x,
+                ./img/team/img-1200/igor-270/img@2x.jpg 2x,
+                ./img/team/img-1200/igor-270/img@3x.jpg 3x
+                "
+                type="image/jpg"
+                />
+                <img
+                  class=""
                   src="./img/team/img-480/igor/img@1x.jpg"
                   alt="Игорь Демьяненко"
-                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw"
+                  sizes="(min-widht:1200px) 25vw, (min-widht:767px) 50vw, (min-widht:479px) 100vw, 100vw
                   loading="lazy"
                 />
+               
               </picture>
 
               <div class="employee__card">

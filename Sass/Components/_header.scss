@@ -5,13 +5,11 @@
 
 .main-header {
   padding: 16px;
-  width: 100%;
+  max-width: 100%;
 
-  
-  @media screen and (max-width:768.99px ) {
-    width: 100%;
+  @media screen and (max-width: 768.99px) {
+    max-width: 100%;
   }
-
 
   @media screen and (min-width: 767px) {
     display: flex;

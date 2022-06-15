@@ -43,8 +43,7 @@
 .nav-menu.is-open {
   display: flex;
   flex-direction: column;
-  
-
+ 
 }
 
 .nav-menu-authorization__list {
@@ -58,11 +57,16 @@
   color: $accent-color;
 
   font-weight: 500;
-  // font-size: 34px;
-  font-size: calc(28px + 6 * (100vw / 1200));
+  font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px){
+    font-size: calc(24px + 10 * (100vw / 1200));
+    }
+
 }
+
 .nav-menu-authorizationMail {
   font-weight: 500;
   font-size: 24px;

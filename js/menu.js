@@ -1,10 +1,8 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  // const bodyRef = document.body.classList.toggle("is-open");
  
-  // document.body.classList.toggle("modal-open");
-  const bodyRef = document.querySelector("[is-open]")
+  // const bodyRef = document.querySelector("[is-open]")
 
 
 
@@ -17,11 +15,14 @@
     
 
     mobileMenuRef.classList.toggle("is-open");
-    bodyRef.classList.toggle("is-open");
-  
-    // const bodyRef = document.body.classList.add("is-open");
-    // const bodyRef = document.body.classList.toggle()
-  
+    
+    
+    // body.classList.toggle("is-open");
+    // function toggle() {
+      document.body.classList.toggle("is-open");
+      // refs.menuBtnRef.classList.toggle("is-hidden");
+
+      
   });
   
   

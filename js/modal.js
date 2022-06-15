@@ -11,4 +11,12 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-hidden");
     }
-  })();
+
+    function toggleModal() {
+      document.body.classList.toggle("modal-open");
+      refs.modal.classList.toggle("is-hidden");
+
+    }
+
+  }
+  )();

@@ -274,7 +274,11 @@ body {
 }
 
 body.modal-open {
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+body.is-open {
+  overflow: hidden;
 }
 
 a {
@@ -483,12 +487,12 @@ img {
 
 .nav__link--active::after {
   content: " ";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
   position: absolute;
   bottom: -1px;
   left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
   margin: 0;
   padding: 0;
   background-color: #2196f3;
@@ -554,13 +558,13 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
-  overflow-y: scroll;
+  overflow-y: scroрll;
   display: none;
   background-color: #ffffff;
   padding: 48px 40px;
@@ -611,7 +615,7 @@ img {
 .nav-menu-authorizationTel {
   color: #2196f3;
   font-weight: 500;
-  font-size: 34px;
+  font-size: calc(28px + 6 * (100vw / 1200));
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
@@ -927,7 +931,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) {
   .modal-data {
     width: 450px;
     height: 609px;

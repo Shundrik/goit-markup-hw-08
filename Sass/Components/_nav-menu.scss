@@ -14,6 +14,8 @@
 
   background-color: #ffffff;
   padding: 48px 40px;
+ 
+
 
   z-index: 1;
 
@@ -98,6 +100,15 @@
     margin-left: 10px;
     margin-right: 10px;
     background-color: rgba(33, 33, 33, 0.2);
+
+
+    @media screen and (max-width: 767px){
+      margin-left: 4px;
+      margin-right: 4px;
+      height: calc(18px + 4 * (100vw / 1200));
+     
+      }
+
   }
 
   
@@ -115,7 +126,12 @@
 
   letter-spacing: 0.02em;
   color: $accent-color;
-  margin-right: 5px;
+  // margin-right: 5px;
+  
+  @media screen and (max-width: 767px){
+    font-size: calc(11px + 7 * (100vw / 1200));
+   
+    }
 
 
   

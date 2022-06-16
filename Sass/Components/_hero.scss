@@ -20,9 +20,16 @@
 
   text-align: center;
   text-transform: uppercase;
+  @media screen and (max-width: 479.99px){
+    font-size: calc(39px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280));
+  }
+
+
 }
 
 .overlay {
+
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(

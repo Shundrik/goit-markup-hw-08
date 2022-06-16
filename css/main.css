@@ -662,6 +662,14 @@ img {
   background-color: rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 767px) {
+  .nav-menu-social__item:not(:last-child):after {
+    margin-left: 4px;
+    margin-right: 4px;
+    height: calc(18px + 4 * (100vw / 1200));
+  }
+}
+
 .nav-menu-social__link {
   margin: 0;
   padding: 0;
@@ -670,7 +678,12 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu-social__link {
+    font-size: calc(11px + 7 * (100vw / 1200));
+  }
 }
 
 .nav-menu__link.nav-menu__link--active {
@@ -795,7 +808,14 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 479.99px) {
+  .hero__title {
+    font-size: calc(39px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280));
+  }
+}
+
 .overlay {
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-480@1x.jpg);
@@ -2235,7 +2255,7 @@ img {
   max-width: 100%;
   height: 100%;
   margin: 0;
-  padding: 2px;
+  padding: 2vmax;
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
@@ -2251,6 +2271,13 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 479px) {
+  .project___overlay {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 480px) {

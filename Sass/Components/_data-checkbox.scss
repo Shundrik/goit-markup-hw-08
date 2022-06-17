@@ -68,8 +68,8 @@
   align-items: center;
 
   margin-right: 7px;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
 
   border: 2px solid $secondary-text-color;
   border-radius: 2px;

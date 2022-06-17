@@ -24,16 +24,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
+
+
+  width: 100%;
+  height: 100%;
 
   padding: 40px 40px;
   background-color: rgba(255, 255, 255, 1);
 
   transition-duration: 1000ms;
   transition-timing-function: $timing-bezier;
- @media screen and (max-width: 479px) {
-    width: 100%;
-    height: 100%;
-  }
+
+  // @media screen and (max-width: 479.9px) {
+  //   width: 100;
+  //   height: 100%;
+  // }
   @media screen and (min-width:$mobile) {
     width: 450px;
     height: 609px;
@@ -42,7 +48,7 @@
     width: 528px;
     height: 581px;
   }
-z-index: 100;
+
 
 }
 .modal-data-btn {
